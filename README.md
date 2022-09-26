@@ -6,28 +6,6 @@ On a frontend development self-teaching journey I have created a cheat-sheet for
 
 As a developer I want a quick and easy to use reference guide.
 
- ## Requirements
-
- * Web Browser
-
-
-## Technologies
-
- * HTML
- * CSS
-
-
-## Resources
-
-* Font Awesome
-* Google fonts
-
-## Software Applications
-
- * VS Code
- * Git & Github Desktop
- * OpenOffice
-
 ## Project Plan
 
 1. [x] Setup<br>
@@ -67,12 +45,32 @@ As a developer I want a quick and easy to use reference guide.
     4. [] Different browsers
     5. [] Link check
   
+## Requirements
 
+ * Web Browser
+
+
+## Technologies
+
+ * HTML
+ * CSS
+
+## Resources
+
+* Font Awesome
+* Google fonts
+
+## Software Applications
+
+ * VS Code
+ * Git & Github Desktop
+ * OpenOffice
+ 
 ## Contributors
 
 **Mary Ronan** - [MazOnTheMoon](https://github.com/MazontheMoon)
 
-*See [contributors](https://github.com/MazontheMoon/css_cheatsheet_media_query/blob/enterlinkhere)*
+*See [contributors]()*
 
 ## Related Projects
 
