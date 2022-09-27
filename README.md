@@ -60,11 +60,12 @@ As a developer I want a quick and easy to use reference guide.
 * Font Awesome
 * Google fonts
 
-## Software Applications
+## Applications
 
  * VS Code
  * Git & Github Desktop
  * OpenOffice
+ * Figma
  
 ## Contributors
 
