@@ -13,7 +13,7 @@ As a developer I want a quick and easy to use reference guide.
     2. [x] Create README and CONTRIBUTORS
     3. [x] Create INDEX and STYLES
 2. [] Content<br>
-    1. [] Gather content
+    1. [x] Gather content
     2. [] Organise text content
     3. [] Create page map
 3. [] Design<br>
