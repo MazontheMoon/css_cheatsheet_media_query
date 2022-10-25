@@ -14,7 +14,7 @@ As a developer I want a quick and easy to use reference guide.
     3. [x] Create INDEX and STYLES
 2. [] Content<br>
     1. [x] Gather content
-    2. [] Organise text content
+    2. [x] Organise text content
     3. [] Create page map
 3. [] Design<br>
     1. [] Wireframe
