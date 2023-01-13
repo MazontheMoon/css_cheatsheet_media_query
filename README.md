@@ -17,19 +17,15 @@ As a developer I want a quick and easy to use reference guide.
     2. [x] Organise text content
     3. [x] Create page map
 3. [] Design<br>
-    1. [] Wireframe
-    2. [] Media
-    3. [] Colour scheme
-    4. [] Fonts and Icons
-    5. [] Prototype
+    1. [x] Wireframe
+    2. [] Colour scheme
 4. [] Build<br>
-    1. [] HTML skeleton
-    2. [] Heading and Logo
-    3. [] Navigation
-    3. [] Sections
-    4. [] Figures and Media
-    4. [] Aside
-    3. [] Footer 
+    1. [x] HTML skeleton
+    2. [x] Heading and Logo
+    3. [x] Navigation
+    4. [] Sections
+    5. [] Figures and Media
+    6. [] Footer 
 5. [] Styling<br>
     1. [] Page Layout
     2. [] Text and Fonts
