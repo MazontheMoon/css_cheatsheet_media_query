@@ -21,8 +21,8 @@ As a developer I want a quick and easy to use reference guide.
     2. [] Colour scheme
 4. [] Build<br>
     1. [x] HTML skeleton
-    2. [] Heading and Logo
-    3. [] Navigation
+    2. [x] Heading and Logo
+    3. [x] Navigation
     4. [] Sections
     5. [] Figures and Media
     6. [] Footer 
