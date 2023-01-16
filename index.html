@@ -58,7 +58,6 @@
    7. Footer
    --------------------------------------------------->
 
-
    <body>
      <header id="top">
         <div id="logo">
@@ -75,6 +74,25 @@
      <main>
         <section id="sec_intro">
             <h2>What are Media Queries?</h2>
+            <p>Media Queries are used to apply or change CSS styles for different media types, commonly for resizing elements for different viewport sizes but also for user preferences such as dark mode or no animation as well as for print view.</p>
+            <p>Media queries can obtain information from the browser such as:</p>
+            <ul>
+                <li>width and height of viewport</li>
+                <li>width and height of device</li>
+                <li>orientation</li>
+                <li>resolution</li>
+                <li>user preferences (dark mode, no animation, etc.)</li>
+            </ul>
+            <div class="codeBlock">
+                <p>A media query has a media type and can contain one or more expressions:</p>
+                <code>
+                    <pre>
+@media screen and (min-width: 1024px) { 
+    **styles go here**
+}
+</pre>
+                </code>
+            </div>
         </section>
         <section id="sec_types">
             <div class="sec_intro">
