@@ -24,36 +24,36 @@
     4.c. Subsection 3 - screen
     4.d. Subsection 4 - speech
     4.e. Subsection 5 - operators
-   5. Section 2 - Media Features
+   5. Section 3 - Media Features
     5.a. Subsection 1 - any-hover
-    5.b. Subsection 1 - any-pointer
-    5.c. Subsection 1 - aspect-ratio
-    5.d. Subsection 1 - color
-    5.e. Subsection 1 - color-gamut
-    5.f. Subsection 1 - color-index
-    5.g. Subsection 1 - device-aspect-ratio
-    5.h. Subsection 1 - device-height
-    5.i. Subsection 1 - device-width
-    5.j. Subsection 1 - display-mode
-    5.k. Subsection 1 - dynamic-range
-    5.l. Subsection 1 - forced-colors
-    5.m. Subsection 1 - grid
-    5.n. Subsection 1 - height
-    5.o. Subsection 1 - hover
-    5.p. Subsection 1 - inverted-colors
-    5.q. Subsection 1 - monochrome
-    5.r. Subsection 1 - orientation
-    5.s. Subsection 1 - overflow-block
-    5.t. Subsection 1 - overflow-inline
-    5.u. Subsection 1 - pointer
-    5.v. Subsection 1 - prefers-color-scheme
-    5.w. Subsection 1 - prefers-contrast
-    5.x. Subsection 1 - prefers-reduced-motion
-    5.y. Subsection 1 - resolution
-    5.z. Subsection 1 - scripting
-    5.aa. Subsection 1 - update
-    5.ab. Subsection 1 - video-dynamic-range
-    5.ac. Subsection 1 - width
+    5.b. Subsection 2 - any-pointer
+    5.c. Subsection 3 - aspect-ratio
+    5.d. Subsection 4 - color
+    5.e. Subsection 5 - color-gamut
+    5.f. Subsection 6 - color-index
+    5.g. Subsection 7 - device-aspect-ratio
+    5.h. Subsection 8 - device-height
+    5.i. Subsection 9 - device-width
+    5.j. Subsection 10 - display-mode
+    5.k. Subsection 11 - dynamic-range
+    5.l. Subsection 12 - forced-colors
+    5.m. Subsection 13 - grid
+    5.n. Subsection 14 - height
+    5.o. Subsection 15 - hover
+    5.p. Subsection 16 - inverted-colors
+    5.q. Subsection 17 - monochrome
+    5.r. Subsection 18 - orientation
+    5.s. Subsection 19 - overflow-block
+    5.t. Subsection 20 - overflow-inline
+    5.u. Subsection 21 - pointer
+    5.v. Subsection 22 - prefers-color-scheme
+    5.w. Subsection 23 - prefers-contrast
+    5.x. Subsection 24 - prefers-reduced-motion
+    5.y. Subsection 25- resolution
+    5.z. Subsection 26 - scripting
+    5.aa. Subsection 27 - update
+    5.ab. Subsection 28 - video-dynamic-range
+    5.ac. Subsection 29 - width
    6. Resources (aside)
    7. Footer
    --------------------------------------------------->
@@ -106,6 +106,7 @@
                     <li><a href="#type_operators">operators</a></li>
                 </ul> 
             </div>
+            <!--section 2 subsection 1-->
             <div id="type_all"  class="sec_box">
                 <h3>all</h3>
                 <div class="codeBlock">
@@ -115,6 +116,7 @@
                     </code>
                 </div>
             </div>
+            <!--section 2 subsection 2-->
             <div id="type_print" class="sec_box">
                 <h3>print</h3>
                 <div class="codeBlock">
@@ -124,6 +126,7 @@
                     </code>
                 </div>
             </div>
+            <!--section 2 subsection 2-->
             <div id="type_screen" class="sec_box">
                 <h3>screen</h3>
                 <div class="codeBlock">
@@ -133,6 +136,7 @@
                     </code>
                 </div>
             </div>
+            <!--section 2 subsection 3-->
             <div id="type_speech" class="sec_box">
                 <h3>speech</h3>
                 <div class="codeBlock">
@@ -142,6 +146,7 @@
                     </code>
                 </div>
             </div>
+            <!--section 2 subsection 4-->
             <div id="type_operators" class="sec_box">
                 <h3>operators</h3>
                 <p>Logical operators can be used with the media queries</p>
@@ -194,323 +199,357 @@
                     <li><a href="#feat_width">width</a></li>                 
                 </ul> 
             </div>
+            <!--section 3 subsection 1-->
             <div id="feat_anyHover" class="sec_box">
                 <h3>any-hover</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check if ANY available input can hover over elements</p>
+                    <ul>
+                        <li>none</li>
+                        <li>hover</li>
+                    </ul>
+                    <code>@media (anyhover:none) {…}</code>
+                    <code>@media (anyhover:hover) {…}</code>
                 </div>
             </div>
+            <!--section 3 subsection 2-->
             <div id="feat_anyPointer" class="sec_box">
                 <h3>any-pointer</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check if any available input is a pointing device and if so the accuracy</p>
+                    <ul>
+                        <li>none</li>
+                        <li>coarse</li>
+                        <li>fine</li>
+                    </ul>
+                    <code>@media (any-pointer: none){…}</code>
+                    <code>@media (any-pointer: coarse){…}</code>
+                    <code>@media (any-pointer: fine){…}</code>
                 </div>
             </div>
+            <!--section 3 subsection 3-->
             <div id="feat_aspectRatio" class="sec_box">
                 <h3>aspect-ratio</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>The ratio between width and height of viewport (also <span class="code_word">min-aspect-ratio</span> and <span class="code_word">max-aspect-ratio</span>).</p>
+                    <code>@media (min-aspect-ratio: 8/5) {…}</code>
+                    <code>@media (max-aspect-ratio: 3/2) {…}</code>
+                    <code>@media (aspect-ratio: 1/1) {…}</code>
+                    <p>If using <span class="code_word">min-aspect-ratio</span> and/or <span class="code_word">max-aspect-ratio</span> with <span class="code_word">aspect-ratio</span> then <span class="code_word">aspect-ratio</span> must be at the bottom to avoid overrides.</p>
                 </div>
             </div>
+            <!--section 3 subsection 4-->
             <div id="feat_color" class="sec_box">
                 <h3>color</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check the number of bits per RGB colour component of the output device</p>
+                    <code>@media (color) {…} <span class="code_comment">/*any colour device*/</span></code>
+                    <code>@media (min-color: 8) {…} <span class="code_comment">/*any colour device with at least 8bit colour*/</span></code>
                 </div>
             </div>
+            <!--section 3 subsection 5-->
             <div id="feat_colorGamut" class="sec_box">
                 <h3>color-gamut</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check the range of colours supported by end software or hardware</p>
+                    <ul>
+                        <li>srgb</li>
+                        <li>p3</li>
+                        <li>rec2020</li>
+                    </ul>
+                    <code>@media (color-gamut: srgb) {…} <span class="code_comment">/*any colour device*/</span></code>
                 </div>
             </div>
+            <!--section 3 subsection 6-->
             <div id="feat_colorIndex" class="sec_box">
                 <h3>color-index</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check number of entries in output device colour table (also min-color-index and max-color-index)</p>
+                    <code>@media (color-index:256) {…} </code>
+                    <code>@media (min-color-index:15000) {…}</code>
+                    <code>@media (max-color-index:8000000) {…}</code>
                 </div>
             </div>
+            <!--section 3 subsection 7-->
             <div id="feat_devAspectRatio" class="sec_box">
                 <h3>device-aspect-ratio</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p class="obsolete">Deprecated!</p>
                 </div>
             </div>
+            <!--section 3 subsection 8-->
             <div id="feat_devHeight" class="sec_box">
                 <h3>device-height</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p class="obsolete">Deprecated!</p>
                 </div>
             </div>
+            <!--section 3 subsection 9-->
             <div id="feat_devWidth" class="sec_box">
                 <h3>device-width</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p class="obsolete">Deprecated!</p>
                 </div>
             </div>
+            <!--section 3 subsection 10-->
             <div id="feat_dispMode" class="sec_box">
-                <h3>display-mode/h3>
+                <h3>display-mode</h3>
                     <div class="codeBlock">
-                        <p></p>
-                        <code>
-                            <pre>
-                                
-                            </pre>
-                        </code>
+                        <p>Check display mode of application.</p>
+                        <ul>
+                            <li>fullscreen</li>
+                            <li>standalone</li>
+                            <li>minimal-ui</li>
+                            <li>browser</li>
+                        </ul>
+                        <code>@media (display-mode:fullscreen) {…} <span class="code_comment">/*all available display 	area used*/</span></code>
+                        <code>@media (display-mode:standalone){…} <span class="code_comment">/*will look and feel like a standalone app*/</span></code>
+                        <code>@media (display-mode:minimal-ui) <span class="code_comment">*will look and feel like a standalone app but only minimal nav elements*/</span></code>
+                        <code>@media (display-mode:browser){…} <span class="code_comment">/*opens in browser tab*/</span></code>
                     </div>
             </div>
+            <!--section 3 subsection 11-->
             <div id="feat_dynRange" class="sec_box">
                 <h3>dynamic-range</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check brightness, contrast and colour on end software/hardware</p>
+                    <ul>
+                        <li>standard</li>
+                        <li>high</li>
+                    </ul>
+                    <code>@media (dynamic-range:standard) {…}</code>
+                    <code>@media (dynamic-range:high) {…} </code>
                 </div>
             </div>
+            <!--section 3 subsection 12-->
             <div id="feat_forcedColor" class="sec_box">
                 <h3>forced-colors</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check if user had enabled forced colours mode</p>
+                    <ul>
+                        <li>none</li>
+                        <li>active</li>
+                    </ul>
+                    <code>@media (dynamic-range:standard){…}</code>
                 </div>
             </div>
+            <!--section 3 subsection 13-->
             <div id="feat_grid" class="sec_box">
                 <h3>grid</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check if output device uses grid-based screen</p>
+                    <code>@media (grid: 1) {…}</code>
+                    <code>@media (grid: 0) {…}</code>
                 </div>
             </div>
+            <!--section 3 subsection 14-->
             <div id="feat_height" class="sec_box">
                 <h3>height</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Used to apply styles based on viewport height (also <span class="code_word">min-height</span> and <span class="code_word">>max-height</span)</p>
+                    <code>@media (height: 360px) {…}</code>
+                    <code>@media (min-height: 250px) {…}</code>
+                    <code>@media (max-height: 800px) {…}</code>
                 </div>
             </div>
+            <!--section 3 subsection 15-->
             <div id="feat_hover" class="sec_box">
                 <h3>hover</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check if primary input can hover over elements</p>
+                    <ul>
+                        <li>none</li>
+                        <li>hover</li>
+                    </ul>
+                    <code>@media (hover:hover) {…}</code>
+                    <code>@media (hover:none) {…}</code>
                 </div>
             </div>
+            <!--section 3 subsection 16-->
             <div id="feat_invColor" class="sec_box">
                 <h3>inverted-colors</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check if user or OS is inverting colours</p>
+                    <ul>
+                        <li>none</li>
+                        <li>inverted</li>
+                    </ul>
+                    <code>@media (inverted-colors:none) {…}</code>
+                    <code>@media (inverted-colors:inverted) {…}</code>
                 </div>
             </div>
+            <!--section 3 subsection 17-->
             <div id="feat_mono" class="sec_box">
                 <h3>monochrome</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check the number of bits per pixel in output device monochrome frame buffer (also <span class="code_word">min-monochrome</span> and <span class="code_word">max-monochrome</span>)</p>
+                    <code>@media (monochrome:0) {…} <span class="code_comment">/*no monochrome*/</span></code>
+                    <code>@media (monochrome) {…} <span class="code_comment">/*any monochrome device*/</span></code>
                 </div>
             </div>
+            <!--section 3 subsection 18-->
             <div id="feat_orient" class="sec_box">
                 <h3>orientation</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check orientation of viewport</p>
+                    <ul>
+                        <li>landscape</li>
+                        <li>portrait</li>
+                    </ul>
+                    <code>@media (orientation: landscape) {…} </code>
+                    <code>@media (orientation: portrait) {…} </code>
                 </div>
             </div>
+            <!--section 3 subsection 19-->
             <div id="feat_overfBlock" class="sec_box">
                 <h3>overflow-block</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check how the output device handles overflow along block axis</p>
+                    <ul>
+                        <li>none</li>
+                        <li>scroll</li>
+                        <li>optional-paged</li>
+                        <li>paged</li>
+                    </ul>
+                    <code>@media (overflow-block: none) {…} <span class="code_comment">/*overflowing content not displayed*/</span></code>
+                    <code>@media (overflow-block: scroll) {…} <span class="code_comment">/*overflowing content available by scrolling*/</span></code>
+                    <code>@media (overflow-block: optional-paged) {…}  <span class="code_comment">/*overflowing content available by scrolling but page breaks can be manually triggered (see “break-inside”) to display content on the following page*/</span></code>
+                    <code>@media (overflow-block: paged) {…} <span class="code_comment">/*Overflowing content is displayed on following page*/	</span></code>
                 </div>
             </div>
+            <!--section 3 subsection 20-->
             <div id="feat_overfInline" class="sec_box">
                 <h3>overflow-inline</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check how the output device handles overflow along inline axis</p>
+                    <ul>
+                        <li>none</li>
+                        <li>scroll</li>
+                    </ul>
+                    <code>@media (overflow-inline: none) {…} <span class="code_comment">/*overflowing content not displayed*/</span></code>
+                    <code>@media (overflow-inline: scroll) {…} <span class="code_comment">/*overflowing content available by scrolling*/</span></code>
                 </div>
             </div>
+            <!--section 3 subsection 21-->
             <div id="feat_pointer" class="sec_box">
                 <h3>pointer</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check if user has pointing device (mouse) and how accurate it is</p>
+                    <ul>
+                        <li>none</li>
+                        <li>coarse</li>
+                        <li>fine</li>
+                    </ul>
+                    <code>@media (pointer: none) {…}</code>
+                    <code>@media (pointer: coarse) {…}</code>
+                    <code>@media (pointer: fine) {…}</code>
                 </div>
             </div>
+            <!--section 3 subsection 22-->
             <div id="feat_prefColor" class="sec_box">
                 <h3>prefers-color-scheme</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check if user preference set for colour mode</p>
+                    <ul>
+                        <li>light</li>
+                        <li>dark</li>
+                    </ul>
+                    <code></code>
+        
                 </div>
             </div>
+            <!--section 3 subsection 23-->
             <div id="feat_prefContrast" class="sec_box">
                 <h3>prefers-contrast</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check if user preference set for contrast colour</p>
+                    <ul>
+                        <li>no-preference</li>
+                        <li>more</li>
+                        <li>less</li>
+                        <li>custom</li>
+                    </ul>
+                    <code>@media (prefers-contrast: no-preference) {…}</code>
+                    <code>@media (prefers-contrast: more) {…}</code>
+                    <code>@media (prefers-contrast: less) {…}</code>
+                    <code>@media (prefers-contrast: custom) {…}</code>
                 </div>
             </div>
+            <!--section 3 subsection 24-->
             <div id="feat_prefRedMotion" class="sec_box">
                 <h3>prefers-reduced-motion</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check if user preference set to minimize the amount of non-essential motion</p>
+                    <ul>
+                        <li>no-preference</li>
+                        <li>reduce</li>
+                    </ul>
+                    <code>@media (prefers-reduced-motion: no-preference) {…}</code>
+                    <code>@media (prefers-reduced-motion: reduce) {…}</code>
                 </div>
             </div>
+            <!--section 3 subsection 25-->
             <div id="feat_res" class="sec_box">
                 <h3>resolution</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check pixel density of output device (also <span class="code_word">min-resolution</span> and <span class="code_word">max-resolution</span>)</p>
+                    <code>@media (resolution: 150dpi) {…}</code>
+                    <code>@media (min-resolution: 72dpi) {…}</code>
+                    <code>@media (max-resolution: 300dpi) {…}</code>
                 </div>
             </div>
+            <!--section 3 subsection 26-->
             <div id="feat_script" class="sec_box">
                 <h3>scripting</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check if scripting (JS) available</p>
+                    <ul>
+                        <li>none</li>
+                        <li>initial-only</li>
+                        <li>enabled</li>
+                    </ul>
+                    <code>@media (scripting: none) {…} <span class="code_comment">/*scripting unavailable*/</span></code>
+                    <code>@media (scripting: initial-only) {…} <span class="code_comment">
+                        @media (scripting: initial-only) {…} /*scripting available on initial page load but not afterwards/</span></code>
+                    <code>@media (scripting: enabled) {…} <span class="code_comment">/*scripting available and 	active*/</span></code>
                 </div>
             </div>
+            <!--section 3 subsection 27-->
             <div id="feat_update" class="sec_box">
                 <h3>update</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check how frequently the output device is able to modify appearance of 	content</p>
+                    <ul>
+                        <li>none/li>
+                        <li>slow</li>
+                        <li>fast</li>
+                    </ul>
+                    <code>code> <span class="code_comment"></span></code> <span class="code_comment">/*once rendered the layout 	cannot be updated (eg. print  document)*/</span></code>
+                    <code>@media (update: slow) {…} <span class="code_comment">*layout can dynamically change 	but not fast enough to be perceived as smooth animation (e.g. 	book readers)*</span></code>
+                    <code>@media (update: fast) {…} <span class="code_comment">/*layout can dynamically change 	fast enough to be perceived as smooth animation (e.g. computer screens)/*</span></code>
                 </div>
             </div>
+            <!--section 3 subsection 28-->
             <div id="feat_vidDynRange" class="sec_box">
                 <h3>video-dynamic-range</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check the combination of brightness, contrast ratio, and color depth that are supported</p>
+                    <ul>
+                        <li>standard</li>
+                        <li>high</li>
+                    </ul>
+                    <code>@media (video-dynamic-range: standard) {…}</code>
+                    <p>Firefox ONLY!</p>
                 </div>
             </div>
+            <!--section 3 subsection 29-->
             <div id="feat_width" class="sec_box">
                 <h3>width</h3>
                 <div class="codeBlock">
-                    <p></p>
-                    <code>
-                        <pre>
-                            
-                        </pre>
-                    </code>
+                    <p>Check width of viewport (also <span class="code_word">min-width</span> and <span class="code_word">max-width</span>)</p>
+                    <code>@media (width: 765px) {…}</code>
+                    <code>@media (min-width: 320px) {…}</code>
+                    <code>@media (max-width: 1024px) {…}</code>
                 </div>
             </div>
         </section>
