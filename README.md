@@ -23,9 +23,8 @@ As a developer I want a quick and easy to use reference guide.
     1. [x] HTML skeleton
     2. [x] Heading and Logo
     3. [x] Navigation
-    4. [] Sections
-    5. [] Figures and Media
-    6. [] Footer 
+    4. [x] Sections
+    5. [x] Footer 
 5. [] Styling<br>
     1. [] Page Layout
     2. [] Text and Fonts
