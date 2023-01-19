@@ -18,7 +18,7 @@ As a developer I want a quick and easy to use reference guide.
     3. [x] Create page map
 3. [] Design<br>
     1. [x] Wireframe
-    2. [] Colour scheme
+    2. [x] Colour scheme
 4. [] Build<br>
     1. [x] HTML skeleton
     2. [x] Heading and Logo
