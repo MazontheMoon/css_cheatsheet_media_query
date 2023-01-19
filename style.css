@@ -18,7 +18,7 @@ Page variables
   }
   
   /*======================================
-  Back to Basics - reset browser defaults
+  Back to Basics (reset browser defaults)
   =======================================*/
   html,
   body {
@@ -56,40 +56,36 @@ Page variables
     color: inherit;
   }
 
-/*=============
-Accessibility
-===============*/
+/*====
+LAYOUT
+======*/
+body {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    background-color: var(--col-main);
+    color: var(--col-text);
+}
 
-@media (prefers-color-scheme: dark) {
-    root {
-      --col-main-bg: #1e1b18;
-      --col-main-text: #ff3;
+header {
+    grid-area: header;
     }
-  
-    img {
-      filter: brightness(0.8) saturate(1.25);
+    
+nav {
+    grid-area: nav;
     }
-  }
-  
-  @media (prefers-color-scheme: light) {
-    root {
-      --col-main-bg: #fffaff;
-      --col-main-text: #000;
+    
+main {
+    grid-area: main;
     }
-  }
-  
-  /*minimal animation and scroll user preference*/
-  @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
+    
+footer {
+    grid-area: footer;
     }
-  }
-
 /*==============
 The little touches
 =================*/
