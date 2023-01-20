@@ -1,0 +1,230 @@
+/*============
+Page variables
+==============*/
+
+:root {
+    /*color scheme*/
+    --col-contrast-dark: rgb(34, 87, 122);
+    --col-highlight-dark: rgb(56, 163, 165);
+    --col-contrast-light:rgb(87, 204, 153);
+    --col-highlight-light: rgb(128, 237, 153);
+    --col-main: rgb(38,38,38);
+    --col-text: rgb(242,243,245);
+  
+    /*fonts*/
+    --font-main:  Verdana, sans-serif;
+    --font-heading:  cursive;
+    --font-code: monospace;
+  }
+  
+  /*======================================
+  Back to Basics (reset browser defaults)
+  =======================================*/
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  body * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  
+  /*reset default font - never shall Times New Roman be seen again!*/
+  :is(h1, h2, h3, h4, h5, h6, p, a, li, figcaption) {
+    font-family: Verdana, sans-serif;
+  }
+  
+  :where(ul, ol) {
+    list-style: none;
+  }
+  
+  :where(ul, ol) a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+/*====
+LAYOUT
+======*/
+html {
+  background-color: var(--col-main);
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    color: var(--col-text);
+    width: 100%;
+    height: 100vh;
+
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    }
+
+    h1 {
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+    
+nav {
+    grid-area: nav;
+    }
+    
+main {
+    grid-area: main;
+    width: 90%;
+    margin: 0 auto;
+    }
+
+    section {
+      width: 90%;
+      margin: 0 auto;
+    }
+    
+footer {
+    grid-area: footer;
+    }
+/*==============
+The little touches
+=================*/
+
+/*Back to top shortcut button*/
+
+  
+  /*in case of image not found*/
+  img {
+    position: relative;
+    display: inline-block;
+  }
+  
+  img:after {
+    display: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    border: 1px dashed rgb(211, 211, 211);
+    background-color: rgb(112, 128, 144);
+    color: #000;
+    z-index: 1;
+    font-family: verdana;
+    font-size: 0.8rem;
+    content: "" attr(alt) " was not found";
+  }
+
+/*===
+A11y
+=====*/
+
+@media (prefers-color-scheme: dark) {
+    root {
+      --col-main: rgb(38,38,38);
+      --col-text: rgb(242,243,245);
+    }
+  
+    img {
+      filter: brightness(0.8) saturate(1.25);
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    root {
+      --col-main: rgb(242,243,245);
+      --col-text: rgb(38,38,38);
+    }
+  }
+  
+  /*minimal animation and scroll user preference*/
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /*For screen readers only - removed from page view
+span[class~="sr-only"] {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    -webkit-clip-path: inset(50%) !important;
+    height: 1px !important;
+    width: 1px !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    margin: -1px !important;
+  }
+  
+  /*span:not(.sr-only) {} targets all spans except the screen reader so nothing is overwritten if you dont want to use !important*/
+
+/*======================
+Ye Olde Time Print View
+=======================*/
+@media print {
+    body * {
+      background-color: unset;
+      background: none;
+      color: #000;
+      font-size: 14pt;
+      font-weight: normal;
+      border: none;
+      box-shadow: none;
+      text-shadow: none;
+    }
+  
+    /*remove unneeded elements*/
+    nav {
+      display: none;
+    }
+  
+    /*display links*/
+    footer a:link {
+      color: #000;
+      margin: 0;
+      display: block;
+      font-size: 10pt;
+    }
+  
+    footer a::after {
+      content: " [" attr(href) "]";
+    }
+  
+    footer a:link,
+    footer a:visited {
+      color: #000;
+      background: none;
+      padding: 0;
+    }
+  }

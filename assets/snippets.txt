@@ -1,1 +1,19 @@
+COPY PASTE ME
+-------------
+
 <span class="code_word"></span>
+<span class="code_comment"></span>
+
+VARIABLES
+-------------
+
+
+COLOUR PALLETE
+--------------
+rgb(34, 87, 122) Blue Sapphire --col-main-dark
+rgb(56, 163, 165) Cadet Blue   --col-highlight-dark
+rgb(87, 204, 153) Ocean Green  --col-main-light
+rgb(128, 237, 153) Light Green --col-highlight-light
+rgb(38,38,38) Dark             --col-dark
+rgb(242,243,245) Light         --col-light
+
