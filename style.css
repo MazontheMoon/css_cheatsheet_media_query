@@ -90,7 +90,8 @@ nav {
 
   .nav_bar {
       display: flex;
-      flex-direction: column;
+      flex-flow: row wrap;
+      justify-content: space-around;
     }
 
     .nav_bar a {
