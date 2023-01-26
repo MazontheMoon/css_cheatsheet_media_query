@@ -70,13 +70,17 @@ body {
     "header"
     "nav"
     "main"
+    "aside"
     "footer";
     grid-template-columns: 1fr;
     color: var(--col-text);
+    border: 2px solid red; /*testing purposes*/
 }
 
 header {
     grid-area: header;
+    padding: 0.4rem;
+    border: 5px solid green; /*testing purposes*/
     }
 
     h1 {
@@ -86,6 +90,8 @@ header {
     
 nav {
     grid-area: nav;
+    padding: 0.4rem;
+    border: 2px solid blue; /*testing purposes*/
     }
 
   .nav_bar {
@@ -105,16 +111,24 @@ nav {
     
 main {
     grid-area: main;
-    margin: 0 0.6rem;
+    padding: 0.4rem;
+    border: 2px solid purple; /*testing purposes*/
 
     }
 
     h2 {
       margin: 0.4rem 0;
-      border-bottom: 
+    }
     
+aside {
+  grid-area: aside; 
+  padding: 0.4rem;
+  border: 2px solid orange; /*testing purposes*/
+}    
 footer {
     grid-area: footer;
+    padding: 0.4rem;
+    border: 2px solid yellow; /*testing purposes*/
     }
 /*==============
 The little touches
