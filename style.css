@@ -59,32 +59,76 @@ Page variables
 /*====
 LAYOUT
 ======*/
+html {
+  background-color: var(--col-main);
+  overscroll-behavior: none;
+}
+
 body {
     display: grid;
     grid-template-areas:
     "header"
     "nav"
     "main"
+    "aside"
     "footer";
     grid-template-columns: 1fr;
-    background-color: var(--col-main);
     color: var(--col-text);
+    border: 2px solid red; /*testing purposes*/
 }
 
 header {
     grid-area: header;
+    padding: 0.4rem;
+    border: 5px solid green; /*testing purposes*/
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
     }
     
 nav {
     grid-area: nav;
+    padding: 0.4rem;
+    border: 2px solid blue; /*testing purposes*/
+    }
+
+  .nav_bar {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+
+    .nav_bar a {
+      display: block;
+      font-size: 1.2rem;
+      padding: 0.25rem 0.6rem;
+    }
+
+    .nav_bar a:hover {
     }
     
 main {
     grid-area: main;
+    padding: 0.4rem;
+    border: 2px solid purple; /*testing purposes*/
+
+    }
+
+    h2 {
+      margin: 0.4rem 0;
     }
     
+aside {
+  grid-area: aside; 
+  padding: 0.4rem;
+  border: 2px solid orange; /*testing purposes*/
+}    
 footer {
     grid-area: footer;
+    padding: 0.4rem;
+    border: 2px solid yellow; /*testing purposes*/
     }
 /*==============
 The little touches
