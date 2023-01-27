@@ -80,7 +80,6 @@ body {
 header {
     grid-area: header;
     padding: 0.4rem;
-    border: 5px solid green; /*testing purposes*/
     }
 
     h1 {
@@ -91,7 +90,6 @@ header {
 nav {
     grid-area: nav;
     padding: 0.4rem;
-    border: 2px solid blue; /*testing purposes*/
     }
 
   .nav_bar {
@@ -106,15 +104,19 @@ nav {
 
     .nav_bar a {
       display: block;
-      width: 100%;
       text-align: center;
       font-size: 1.2rem;
+      margin: 0.6rem;
       padding: 0.25rem 0.6rem;
-      border: var(--col-main) 2px solid;
+      background-color: var(--col-contrast-dark);
+      border: var(--col-highlight-dark) 5px solid;
+      border-radius: 1rem;
     }
 
     .nav_bar a:hover {
-      border: var(--col-contrast-dark) 2px solid;
+      border: var(--col-contrast-dark) 5px solid;
+      background-color: var(--col-highlight-dark);
+      color: var(--col-main);
     }
     
 main {
