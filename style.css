@@ -80,11 +80,17 @@ body {
 header {
     grid-area: header;
     padding: 0.4rem;
+    background-color: var(--col-contrast-dark);
+background-image: linear-gradient(to bottom, var(--col-contrast-dark), var(--col-highlight-dark) 50%, var(--col-contrast-light));
+background-clip: text;
+-webkit-background-clip: text;
+color: rgba(0, 0, 0, 0.2);
     }
 
     h1 {
       text-align: center;
-      font-size: 2rem;
+      font-size: 2.6rem;
+      color: rgba(0, 0, 0, 0.2);
     }
     
 nav {
@@ -102,10 +108,12 @@ nav {
       flex: 1;
     }
 
-    .nav_bar a {
+    .nav_bar a{
       display: block;
       text-align: center;
       font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
       margin: 0.6rem;
       padding: 0.25rem 0.6rem;
       background-color: var(--col-contrast-dark);
@@ -113,7 +121,7 @@ nav {
       border-radius: 1rem;
     }
 
-    .nav_bar a:hover {
+    .nav_bar a:active, .nav_bar a:hover, .nav_bar a:focus {
       border: var(--col-contrast-dark) 5px solid;
       background-color: var(--col-highlight-dark);
       color: var(--col-main);
@@ -128,6 +136,11 @@ main {
 
     h2 {
       margin: 0.4rem 0;
+      background-color: var(--col-contrast-dark);
+background-image: linear-gradient(to bottom, var(--col-contrast-dark), var(--col-highlight-dark) 50%, var(--col-contrast-light));
+background-clip: text;
+-webkit-background-clip: text;
+color: rgba(0, 0, 0, 0.2);
     }
     
 aside {
