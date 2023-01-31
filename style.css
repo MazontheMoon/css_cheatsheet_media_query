@@ -8,7 +8,7 @@ Page variables
     --col-highlight-dark: rgb(56, 163, 165);
     --col-contrast-light:rgb(87, 204, 153);
     --col-highlight-light: rgb(128, 237, 153);
-    --col-main: rgb(38,38,38);
+    --col-main: rgb(48, 45, 45);
     --col-text: rgb(242,243,245);
   
     /*fonts*/
@@ -121,7 +121,7 @@ nav {
       border-radius: 1rem;
     }
 
-    .nav_bar a:active, .nav_bar a:hover, .nav_bar a:focus {
+   .nav_bar a:where(:hover, :active, :focus) {
       border: var(--col-contrast-dark) 5px solid;
       background-color: var(--col-highlight-dark);
       color: var(--col-main);
