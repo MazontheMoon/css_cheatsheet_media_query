@@ -105,7 +105,8 @@ nav {
     }
 
     .nav_bar li {
-      flex: 1;
+      display: inline-block;
+      flex: 1 1 45%;
     }
 
     .nav_bar a{
@@ -131,16 +132,24 @@ main {
     grid-area: main;
     padding: 0.4rem;
     border: 2px solid purple; /*testing purposes*/
+    }
 
+    section {
+      padding: 0.4rem;
+      border: 2px solid cyan; /*testing purposes*/
     }
 
     h2 {
-      margin: 0.4rem 0;
       background-color: var(--col-contrast-dark);
 background-image: linear-gradient(to bottom, var(--col-contrast-dark), var(--col-highlight-dark) 50%, var(--col-contrast-light));
 background-clip: text;
 -webkit-background-clip: text;
 color: rgba(0, 0, 0, 0.2);
+    }
+    code {
+      display: inline-block;
+      width: 80%;
+      background-color:silver;
     }
     
 aside {
