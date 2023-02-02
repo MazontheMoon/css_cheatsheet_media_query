@@ -146,10 +146,36 @@ background-clip: text;
 -webkit-background-clip: text;
 color: rgba(0, 0, 0, 0.2);
     }
+
+    .section_nav {
+      margin-inline-start: 1rem;
+    }
+
+    .section_nav li {
+      margin: 0.4rem;
+      padding-inline-start: 0.4rem;
+      border-inline-start: 5px solid var(--col-highlight-dark);
+      border-block-end: 5px solid transparent;
+      border-block-start: 5px solid transparent;
+    }
+
+    .section_nav li:where(:hover, :active, :focus) {
+       border-block-end: 5px solid var(--col-highlight-dark);
+    }
+
+    section ul:not(.section_nav) {
+      margin-inline-start: 4rem;
+      padding: 0.2rem;
+      list-style-type: square;
+    }
+
+    section p {
+      margin: 0.4rem;
+      line-height-step: 1.5;
+    }
+
     code {
-      display: inline-block;
-      width: 80%;
-      background-color:silver;
+      
     }
     
 aside {
