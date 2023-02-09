@@ -75,7 +75,6 @@ body {
     "footer";
     grid-template-columns: 1fr;
     color: var(--col-text);
-    border: 2px solid red; /*testing purposes*/
 }
 
 header {
@@ -135,15 +134,14 @@ main {
     max-width: 1600px;
     margin: 0 auto;
     padding: 0.4rem;
-    border: 2px solid purple; /*testing purposes*/
     }
 
     section {
       padding: 0.4rem;
-      border: 2px solid cyan; /*testing purposes*/
     }
 
     h2 {
+      margin: 0 0.4rem 1rem;
       background-color: var(--col-contrast-dark);
 background-image: linear-gradient(to bottom, var(--col-contrast-dark), var(--col-highlight-dark) 50%, var(--col-contrast-light));
 background-clip: text;
@@ -174,11 +172,18 @@ color: rgba(0, 0, 0, 0.2);
     }
 
     h3 {
-      margin: 0.4rem;
+      margin: 1rem 0.4rem;
       border-bottom: 4px solid var(--col-contrast-dark);
     }
 
-    section p {
+    h4 {
+      margin: 1rem 0.4rem;
+      text-decoration: underline;
+      text-decoration-color:  var(--col-contrast-dark);
+      text-decoration-style: double;
+    }
+
+    p {
       margin: 0.4rem;
       line-height-step: 1.5;
     }
@@ -188,23 +193,56 @@ color: rgba(0, 0, 0, 0.2);
     }
 
     code {
-      display: inline-block;
+      display: block;
       width: 90%;
-      margin: 0.4rem auto;
+      margin: 1rem auto;
       padding: 0.4rem;
       background-color:rgba(0, 0, 0, 0.2);
     }
+
+      code .code_comment {
+        font-style: italic;
+      }
     
 aside {
   grid-area: aside; 
-  padding: 0.4rem;
-  border: 2px solid orange; /*testing purposes*/
-}    
+  padding: 0 1rem;
+}   
+
+  aside li {
+    border-left: solid 4px var(--col-highlight-light);
+  }
+  aside a {
+    padding: 0.4rem;
+    display: block;
+  }
+  aside a:where(:hover, :active, :focus) {
+    background-color: var(--col-highlight-light);
+    color: var(--col-main);
+  }
 footer {
     grid-area: footer;
     padding: 0.4rem;
-    border: 2px solid yellow; /*testing purposes*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
+
+ footer ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+   } 
+
+  footer a {
+    font-size: larger;
+  } 
+
+  footer a:where(:hover, :active, :focus) {
+    background-color: var(--col-highlight-light);
+    box-shadow: 1px 1px 5px var(--col-highlight-light),-1px -1px 5px var(--col-highlight-light);
+    color: var(--col-main);
+  }
 /*==============
 The little touches
 =================*/
