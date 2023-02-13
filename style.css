@@ -14,7 +14,7 @@ Page variables
     /*fonts*/
     --font-main:  Verdana, sans-serif;
     --font-heading: 'Macondo', cursive;
-    --font-code: monospace;
+    --font-code: 'Roboto Mono', monospace;
   }
   
   /*======================================
@@ -49,6 +49,7 @@ Page variables
   
   :where(ul, ol) {
     list-style: none;
+    margin: none;
   }
   
   :where(ul, ol) a {
@@ -89,10 +90,12 @@ color: rgba(0, 0, 0, 0.2);
 
     h1 {
       text-align: center;
-      font-size: 2.6rem;
+      font-family: var(--font-heading);
+      font-size: clamp(2.8rem, 3.8rem, 4.8rem);
+      font-weight: bold;
       color: rgba(0, 0, 0, 0.2);
     }
-    
+
 nav {
     grid-area: nav;
     padding: 0.4rem;
@@ -114,16 +117,21 @@ nav {
       text-align: center;
       font-size: 1.2rem;
       font-weight: bold;
+      text-shadow: 1px 1px 2px var(--col-main);
       letter-spacing: 1px;
       margin: 0.6rem;
       padding: 0.25rem 0.6rem;
       background-color: var(--col-contrast-dark);
-      border: var(--col-highlight-dark) 5px solid;
-      border-radius: 1rem;
+      border: var(--col-highlight-dark) 3px solid;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
 
+  
+
+
+
    .nav_bar a:where(:hover, :active, :focus) {
-      border: var(--col-contrast-dark) 5px solid;
+      border: var(--col-contrast-dark) 3px solid;
       background-color: var(--col-highlight-dark);
       color: var(--col-main);
     }
@@ -142,11 +150,15 @@ main {
 
     h2 {
       margin: 0 0.4rem 1rem;
+      padding-bottom: 3px;
+      border-bottom: 3px solid var(--col-highlight-dark);
       background-color: var(--col-contrast-dark);
 background-image: linear-gradient(to bottom, var(--col-contrast-dark), var(--col-highlight-dark) 50%, var(--col-contrast-light));
 background-clip: text;
 -webkit-background-clip: text;
 color: rgba(0, 0, 0, 0.2);
+letter-spacing: 1px;
+
     }
 
     .section_nav {
@@ -166,14 +178,16 @@ color: rgba(0, 0, 0, 0.2);
     }
 
     section ul:not(.section_nav) {
-      margin-inline-start: 4rem;
+      margin-inline-start: 3rem;
+      margin-inline-end: 1rem;
       padding: 0.2rem;
       list-style-type: square;
     }
 
     h3 {
       margin: 1rem 0.4rem;
-      border-bottom: 4px solid var(--col-contrast-dark);
+      border-bottom: 3px solid var(--col-contrast-dark);
+      letter-spacing: 1px;
     }
 
     h4 {
@@ -185,7 +199,7 @@ color: rgba(0, 0, 0, 0.2);
 
     p {
       margin: 0.4rem;
-      line-height-step: 1.5;
+      line-height: 1.5;
     }
 
     .codeBlock {
@@ -198,6 +212,10 @@ color: rgba(0, 0, 0, 0.2);
       margin: 1rem auto;
       padding: 0.4rem;
       background-color:rgba(0, 0, 0, 0.2);
+      border: 1px solid black;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      font-family: var(--font-code);
+      letter-spacing: 2px;
     }
 
       code .code_comment {
@@ -209,6 +227,10 @@ aside {
   padding: 0 1rem;
 }   
 
+  aside ul {
+    margin: 0.4rem;
+  }
+
   aside li {
     border-left: solid 4px var(--col-highlight-light);
   }
@@ -219,6 +241,7 @@ aside {
   aside a:where(:hover, :active, :focus) {
     background-color: var(--col-highlight-light);
     color: var(--col-main);
+    font-weight: bold;
   }
 footer {
     grid-area: footer;
@@ -235,7 +258,7 @@ footer {
    } 
 
   footer a {
-    font-size: larger;
+    font-size: clamp(1.4rem, 1.6rem, 1.8rem);
   } 
 
   footer a:where(:hover, :active, :focus) {
