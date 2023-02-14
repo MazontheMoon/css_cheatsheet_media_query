@@ -78,6 +78,10 @@ body {
     color: var(--col-text);
 }
 
+/*============
+HEADER AND NAV
+=============*/
+
 header {
     grid-area: header;
     padding: 0.4rem;
@@ -89,6 +93,7 @@ color: rgba(0, 0, 0, 0.2);
     }
 
     h1 {
+      padding: 0.4rem;
       text-align: center;
       font-family: var(--font-heading);
       font-size: clamp(2.8rem, 3.8rem, 4.8rem);
@@ -126,16 +131,15 @@ nav {
       box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
 
-  
-
-
-
-   .nav_bar a:where(:hover, :active, :focus) {
+    .nav_bar a:where(:hover, :active, :focus) {
       border: var(--col-contrast-dark) 3px solid;
       background-color: var(--col-highlight-dark);
       color: var(--col-main);
     }
     
+/*======
+SECTIONS
+========*/    
 main {
     grid-area: main;
     width: 95%;
@@ -150,8 +154,8 @@ main {
 
     h2 {
       margin: 0 0.4rem 1rem;
-      padding-bottom: 3px;
-      border-bottom: 3px solid var(--col-highlight-dark);
+      padding-block-end: 3px;
+      border-block-end: 3px solid var(--col-highlight-dark);
       background-color: var(--col-contrast-dark);
 background-image: linear-gradient(to bottom, var(--col-contrast-dark), var(--col-highlight-dark) 50%, var(--col-contrast-light));
 background-clip: text;
@@ -174,7 +178,12 @@ letter-spacing: 1px;
     }
 
     .section_nav li:where(:hover, :active, :focus) {
-       border-block-end: 5px solid var(--col-highlight-dark);
+      border-block-start: 5px solid var(--col-highlight-dark); 
+      border-block-end: 5px solid var(--col-highlight-dark);
+    }
+
+    .section_nav li a {
+      display: block;
     }
 
     section ul:not(.section_nav) {
@@ -183,10 +192,18 @@ letter-spacing: 1px;
       padding: 0.2rem;
       list-style-type: square;
     }
+    
+    #type_operators {
+      padding-inline-start: 1rem;
+    }
+
+    #type_operators:where (p, h4) {
+      padding-inline-start: 1rem;
+    }
 
     h3 {
       margin: 1rem 0.4rem;
-      border-bottom: 3px solid var(--col-contrast-dark);
+      border-block-end: 3px solid var(--col-contrast-dark);
       letter-spacing: 1px;
     }
 
@@ -221,10 +238,14 @@ letter-spacing: 1px;
       code .code_comment {
         font-style: italic;
       }
-    
+
+/*====
+ ASIDE
+=====*/   
 aside {
   grid-area: aside; 
   padding: 0 1rem;
+  border-block-start: 4px solid var(--col-highlight-light);
 }   
 
   aside ul {
@@ -232,7 +253,7 @@ aside {
   }
 
   aside li {
-    border-left: solid 4px var(--col-highlight-light);
+    border-inline-start: solid 4px var(--col-highlight-light);
   }
   aside a {
     padding: 0.4rem;
@@ -243,6 +264,10 @@ aside {
     color: var(--col-main);
     font-weight: bold;
   }
+
+ /*======
+   FOOTER
+   ======*/  
 footer {
     grid-area: footer;
     padding: 0.4rem;
@@ -266,6 +291,7 @@ footer {
     box-shadow: 1px 1px 5px var(--col-highlight-light),-1px -1px 5px var(--col-highlight-light);
     color: var(--col-main);
   }
+
 /*==============
 The little touches
 =================*/
