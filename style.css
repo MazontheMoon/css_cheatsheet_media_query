@@ -219,6 +219,15 @@ letter-spacing: 1px;
       line-height: 1.5;
     }
 
+    .code_word {
+      padding: 0 3px;
+      font-family: var(--font-code);
+      font-weight: bold;
+      letter-spacing: 2px;
+      background-color: rgba(0,0,0,0.2);
+
+    }
+
     .codeBlock {
       padding: 0.4rem;
     }
