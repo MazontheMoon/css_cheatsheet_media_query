@@ -7,6 +7,9 @@
     <meta name="author" content="MazontheMoon">
     <meta name="description" content="A CSS Cheatsheet for Media Queries with code examples">
     <!--Stylesheets & Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Macondo&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -66,13 +69,13 @@
      </header>
      <nav>
         <ul class="nav_bar">
-            <li><a href="#sec_types">Media Types</a></li>
-            <li><a href="#sec_feat">Media Features</a></li>
+            <li><a href="#sec_types">Types</a></li>
+            <li><a href="#sec_feat">Features</a></li>
         </ul>
      </nav>
      <main>
         <section id="sec_intro">
-            <h2>What are Media Queries?</h2>
+            <h2>Why use Media Queries?</h2>
             <p>Media Queries are used to apply or change CSS styles for different media types, commonly for resizing elements for different viewport sizes but also for user preferences such as dark mode or no animation as well as for print view.</p>
             <p>Media queries can obtain information from the browser such as:</p>
             <ul>
@@ -85,19 +88,17 @@
             <div class="codeBlock">
                 <p>A media query has a media type and can contain one or more expressions:</p>
                 <code>
-                    <pre>
-@media screen and (min-width: 1024px) { 
-    **styles go here**
+@media screen and (min-width: 1024px) { <br>
+    **styles go here**<br>
 }
-</pre>
                 </code>
             </div>
         </section>
         <section id="sec_types">
             <div class="sec_intro">
-                <h2>Media Types and Operators</h2>
+                <h2>Types and Operators</h2>
                 <!--add aria-role for menulist-->
-                <ul>
+                <ul class="section_nav">
                     <li><a href="#type_all">all</a></li>
                     <li><a href="#type_print">print</a></li>
                     <li><a href="#type_screen">screen</a></li>
@@ -164,9 +165,9 @@
         </section>
         <section id="sec_feat">
             <div class="sec_intro">
-                <h2>Media Features</h2>
+                <h2>Features</h2>
                 <!--add aria-role for menulist-->
-                <ul>
+                <ul class="section_nav">
                     <li><a href="#feat_anyHover">any-hover</a></li>
                     <li><a href="#feat_anyPointer">any-pointer</a></li>
                     <li><a href="#feat_aspectRatio">aspect-ratio</a></li>
@@ -578,10 +579,12 @@
         <!--Made by Me  - Github, Codepen, LinkedIn and Wordpress blog-->
     <div id="made_by_me">
         <p>Designed by <abbr title="Mary Ronan">MazOnTheMoon</abbr> 2022</p>
-        <p><a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"> </span></a>
-          <a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"> </span></a>
-          <a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"> </span></a>
-          <a href="https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/" target="_blank"> <span class="fab fa-wordpress"> </span></a>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"> </span></a></li>
+            <li><a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"> </span></a></li>
+            <li><a href="https://codepen.io/mazonthemoon/#" target="_blank"> <span class="fab fa-codepen"> </span></a></li>
+            <li><a href="https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/" target="_blank"> <span class="fab fa-wordpress"> </span></a></li>
+        </ul>
         </p>
       </div>
      </footer>

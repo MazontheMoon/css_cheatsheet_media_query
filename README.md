@@ -26,7 +26,7 @@ As a developer I want a quick and easy to use reference guide.
     4. [x] Sections
     5. [x] Footer 
 5. [] Styling<br>
-    1. [] Page Layout
+    1. [x] Page Layout
     2. [] Text and Fonts
     3. [] Icons and Media
     4. [] Colours and light/dark modes

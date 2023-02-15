@@ -7,7 +7,7 @@ COPY PASTE ME
 VARIABLES
 -------------
 
-
+n
 COLOUR PALLETE
 --------------
 rgb(34, 87, 122) Blue Sapphire --col-contrast-dark
@@ -17,3 +17,28 @@ rgb(128, 237, 153) Light Green --col-highlight-light
 rgb(38,38,38) Dark             --col-main
 rgb(242,243,245) Light         --col-text
 
+MOBILE (414px breakpoint):
+Logo: 48px
+Large: 32px (47px LH)
+Button: 24px
+Small: 16px (23px LH)
+
+TABLET (768px breakpoint):
+Logo: 48px
+Nav: 30px
+Large: 35px (50px LH)
+Button: 25px
+Small: 20px (30px LH)
+
+LAPTOP (1024px breakpoint):
+Logo: 60px
+Nav: 30px
+Large: 50px (65px LH)
+Button: 30px
+Small: 25px (35px LH)
+
+DESKTOP (1440px breakpoint):
+Logo: 90px
+Large: 70px (90px LH)
+Button: 45px
+Small: 30px (43px LH)
