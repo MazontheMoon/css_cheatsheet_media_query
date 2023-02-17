@@ -197,7 +197,7 @@ letter-spacing: 1px;
       padding-inline-start: 1rem;
     }
 
-    #type_operators:where (p, h4) {
+    #type_operators:where(p, h4) {
       padding-inline-start: 1rem;
     }
 
