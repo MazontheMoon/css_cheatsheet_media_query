@@ -61,7 +61,6 @@ Page variables
 LAYOUT
 ======*/
 html {
-  background-color: var(--col-main);
   overscroll-behavior: none;
 }
 
@@ -75,7 +74,6 @@ body {
     "aside"
     "footer";
     grid-template-columns: 1fr;
-    color: var(--col-text);
 }
 
 /*============
@@ -331,9 +329,9 @@ The little touches
   }
 
 /*===
-A11y
+a11y
 =====*/
-
+/*
 @media (prefers-color-scheme: dark) {
     root {
       --col-main: rgb(38,38,38);
@@ -344,6 +342,7 @@ A11y
       filter: brightness(0.8) saturate(1.25);
     }
   }
+  */
   
   @media (prefers-color-scheme: light) {
     root {
