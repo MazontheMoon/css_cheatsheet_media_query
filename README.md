@@ -30,7 +30,7 @@ As a developer I want a quick and easy to use reference guide.
     2. [x] Text and Fonts
     3. [x] Icons and Media
     4. [x] Colours and light/dark modes
-    5. [] Responsivesness
+    5. [x] Responsivesness
     6. [] Accessibility
     7. [] Print view
 6. [] Testing<br>
