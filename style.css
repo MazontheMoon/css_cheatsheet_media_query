@@ -328,10 +328,11 @@ The little touches
     content: "" attr(alt) " was not found";
   }
 
+
 /*===
 a11y
 =====*/
-/*
+
 @media (prefers-color-scheme: dark) {
     root {
       --col-main: rgb(38,38,38);
@@ -342,7 +343,7 @@ a11y
       filter: brightness(0.8) saturate(1.25);
     }
   }
-  */
+ 
   
   @media (prefers-color-scheme: light) {
     root {
