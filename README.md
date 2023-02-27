@@ -32,9 +32,9 @@ As a developer I want a quick and easy to use reference guide.
     4. [x] Colours and light/dark modes
     5. [x] Responsivesness
     6. [x] Accessibility
-    7. [] Print view
+    7. [x] Print view
 6. [] Testing<br>
-    1. [] HTML analysis
+    1. [x] HTML analysis
     2. [] CSS analysis
     3. [] Different viewport sizes
     4. [] Different browsers
