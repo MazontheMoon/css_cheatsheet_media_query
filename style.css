@@ -401,22 +401,32 @@ Ye Olde Time Print View
       display: none;
     }
   
-    /*display links*/
-    footer a:link {
+
+    footer ul {
+    flex-direction: column;
+    }
+
+      /*display links*/
+  
+    :where(aside, footer) a:link {
       color: #000;
       margin: 0;
       display: block;
-      font-size: 10pt;
+      font-size: 12pt;
     }
   
-    footer a::after {
+    :where(aside, footer) a::after {
       content: " [" attr(href) "]";
     }
   
-    footer a:link,
-    footer a:visited {
+    :where(aside, footer) a:link,
+    :where(aside, footer) a:visited {
       color: #000;
       background: none;
       padding: 0;
+    }
+
+    abbr::after {
+      content:" ["attr(title) "]";
     }
   }
