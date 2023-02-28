@@ -49,7 +49,7 @@ Page variables
   
   :where(ul, ol) {
     list-style: none;
-    margin: none;
+    margin: 0;
   }
   
   :where(ul, ol) a {
