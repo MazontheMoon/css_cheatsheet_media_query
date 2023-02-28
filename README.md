@@ -35,7 +35,7 @@ As a developer I want a quick and easy to use reference guide.
     7. [x] Print view
 6. [] Testing<br>
     1. [x] HTML analysis
-    2. [] CSS analysis
+    2. [x] CSS analysis
     3. [] Different viewport sizes
     4. [] Different browsers
     5. [] Link check
