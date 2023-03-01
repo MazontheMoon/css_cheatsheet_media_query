@@ -38,7 +38,7 @@ As a developer I want a quick and easy to use reference guide.
     2. [x] CSS analysis
     3. [] Different viewport sizes
     4. [] Different browsers
-    5. [] Link check
+    5. [x] Link check
   
 ## Requirements
 
