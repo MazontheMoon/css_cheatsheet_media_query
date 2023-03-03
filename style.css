@@ -148,6 +148,7 @@ main {
 
     section {
       padding: 0.4rem;
+      position: relative;
     }
 
     h2 {
@@ -304,7 +305,21 @@ The little touches
 =================*/
 
 /*Back to top shortcut button*/
+.backtotop {
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
+}
 
+.backtotop a {
+  font-size: 1.2rem;
+  color: var(--col-main-text);
+}
+
+.backtotop a:hover {
+  color: black;
+  text-shadow: 1px 1px 3px blue;
+}
   
   /*in case of image not found*/
   img {
