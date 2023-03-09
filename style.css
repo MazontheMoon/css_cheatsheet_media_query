@@ -151,6 +151,10 @@ main {
       position: relative;
     }
 
+    .sec_box {
+      position: relative;
+    }
+
     h2 {
       margin: 0 0.4rem 1rem;
       padding-block-end: 3px;
@@ -317,8 +321,8 @@ The little touches
 }
 
 .backtotop a:hover {
-  color: black;
-  text-shadow: 1px 1px 3px blue;
+  text-shadow: 1px 1px 5px var(--col-contrast-light),
+  -1px -1px 5px var(--col-contrast-light);
 }
   
   /*in case of image not found*/
