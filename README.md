@@ -83,6 +83,8 @@ As a developer I want a quick and easy to use reference guide.
 [Images](https://codepen.io/mazonthemoon/full/xxqrdrV)<br>
 [Transitions & Transforms](https://codepen.io/mazonthemoon/full/vYeLaRN)<br>
 [Animation](https://codepen.io/mazonthemoon/full/JjpMKjL)<br>
+[Media Queries](https://codepen.io/mazonthemoon/full/xxaWabP)
+<br>
 
 ## License
 
